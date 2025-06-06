@@ -1,0 +1,58 @@
+<context>
+# Overview
+Veritas is a web-based application built on Vite (React) and Cloudflare Workers serverless architecture, designed to streamline Web3 wallet onboarding and serve as a robust Model Context Protocol (MCP) server. It integrates Privy's Web3 authentication system to enable secure blockchain wallet connections and provides seamless handling of authenticated client requests and protocol communication. Veritas combines a modern, user-friendly interface with secure, scalable backend functionality for Web3 and MCP-driven applications.
+
+# Core Features
+- Web3 Wallet Authentication: Leverages Privy's provider for secure, user-friendly wallet onboarding, supporting wallets like Phantom and Backpack with a streamlined connection flow.
+- MCP Server Functionality: Operates as a remote MCP server to process authenticated client requests and manage protocol communication with high reliability and low latency.
+- User Authentication & Session Management: Ensures secure user sessions for MCP clients, with robust authentication workflows and session persistence.
+- RESTful API Endpoints: Exposes well-documented APIs for seamless integration with MCP protocols, enabling developers to build scalable Web3 applications.
+
+# User Experience
+Inspired by the clean onboarding flows of Phantom and Backpack, Veritas features a modern, card-based UI with intuitive navigation and secure connection indicators. The design emphasizes Web3-friendly patterns, such as prominent wallet connect buttons and clear authentication states.
+
+## Style Guide
+- Colors: Primary #6C5CE7 (vibrant purple), Secondary #00CEC9 (teal), Background #000000 (dark black), Text #C0C0C0 (silver), Accent #FF9500 (bitcoin orange), Success #00B894 (green).
+- Typography: Inter, SF Pro, or Roboto fonts for a sleek, readable look.
+- Layout: Responsive, card-based design with smooth transitions, optimized for desktop and mobile Web3 experiences.
+</context>
+<PRD>
+# Technical Architecture
+- Frontend: Built with Vite and React for a fast, responsive UI with hot module reloading for efficient development.
+- Backend: Powered by Cloudflare Workers for serverless, low-latency, and scalable MCP server operations and API handling.
+- Authentication: Integrates Privy's Web3 authentication SDK for secure wallet connections and user onboarding.
+- Vite + React: Ensures a lightweight, high-performance frontend with fast builds and an optimized user experience.
+- Cloudflare Workers: Provides a serverless backend for handling MCP requests and RESTful APIs, ensuring scalability, low latency, and global distribution.
+- Privy Integration: Simplifies Web3 wallet authentication with secure, user-friendly flows, reducing onboarding friction.
+- Deployment: Hosted on Cloudflare's edge network for global accessibility and minimal latency, with Vite's optimized build process ensuring fast load times and a smooth user experience.
+
+# Development Roadmap
+- MVP:
+    1.  Set up Vite (React) frontend project.
+    2.  Implement a basic UI with a "Connect Wallet" button.
+    3.  Integrate Privy SDK for wallet authentication (Phantom, Backpack).
+    4.  Set up Cloudflare Worker for the MCP server backend.
+    5.  Implement a basic MCP endpoint on the worker to handle a simple request.
+    6.  Connect frontend to the backend to make an authenticated request after wallet connection.
+- Future Enhancements:
+    -   Full session management.
+    -   Expanded API endpoints for various MCP actions.
+    -   UI enhancements for displaying user session and wallet information.
+    -   Comprehensive test suite.
+
+# Logical Dependency Chain
+1.  Frontend project setup (Vite + React).
+2.  Backend project setup (Cloudflare Worker).
+3.  Privy integration on the frontend.
+4.  Develop backend API for MCP requests.
+5.  Connect frontend and backend.
+6.  Implement UI/UX based on the style guide.
+
+# Risks and Mitigations
+- Technical Challenges: Integrating Privy with Cloudflare Workers might have unforeseen complexities. Mitigation: Start with a simple proof-of-concept integration early in the development cycle.
+- Resource Constraints: A single developer building this. Mitigation: Focus on a minimal, high-quality MVP before expanding features.
+
+# Appendix
+## Use Case
+Veritas is ideal for Web3 developers building decentralized applications requiring secure wallet authentication and MCP-based protocol communication. It serves as a bridge between blockchain ecosystems and client applications, offering a scalable, secure, and user-centric solution.
+</PRD> 

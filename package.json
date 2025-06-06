@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "task-master-ai": "^0.16.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-basic-ssl": "^2.0.0"
+  }
+}
